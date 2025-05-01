@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="app.js" defer></script>
+  <script src="js/app.js" defer></script>
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Pricing component with toggle</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
   <main class="main">
     <h1>Our Pricing</h1>
-    <label class="pricing">
+    <label class="pricing" for="pricing">
       <span class="label">Annually</span>
 
       <span class="switch">
@@ -27,10 +27,7 @@
         <span class="slider"></span>
       </span>
 
-      <span class="label">
-        <span>Monthly</span>
-      </span>
-
+      <span class="label">Monthly</span>
     </label>
 
     <div class="card-group">
@@ -38,7 +35,7 @@
         <h2 class="card-title">Basic</h2>
         <h3 class="card-price">
           <small>&dollar;</small>
-          <span class="anually" hidden>199.99</span>
+          <span class="anually hidden">199.99</span>
           <span class="monthly">19.99</span>
         </h3>
         <ul class="card-list">
@@ -46,7 +43,6 @@
           <li>2 Users Allowed</li>
           <li>Send up to 3 GB</li>
         </ul>
-          
         <a href="#" class="btn">Learn More</a>
       </div>
 
@@ -54,7 +50,7 @@
         <h2 class="card-title">Professional</h2>
         <h3 class="card-price">
           <small>&dollar;</small>
-          <span class="anually" hidden>249.99</span>
+          <span class="anually hidden">249.99</span>
           <span class="monthly">24.99</span>
         </h3>
         <ul class="card-list">
@@ -62,7 +58,6 @@
           <li>5 Users Allowed</li>
           <li>Send up to 10 GB</li>
         </ul>
-
         <a href="#" class="btn btn-primary">Learn More</a>
       </div>
 
@@ -70,7 +65,7 @@
         <h2 class="card-title">Master</h2>
         <h3 class="card-price">
           <small>&dollar;</small>
-          <span class="anually" hidden>399.99</span>
+          <span class="anually hidden">399.99</span>
           <span class="monthly">39.99</span>
         </h3>
         <ul class="card-list">
@@ -78,7 +73,6 @@
           <li>10 Users Allowed</li>
           <li>Send up to 20 GB</li>
         </ul>
-        
         <a href="#" class="btn">Learn More</a>
       </div>
     </div>
