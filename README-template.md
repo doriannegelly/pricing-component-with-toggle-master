@@ -34,8 +34,8 @@ Les utilisateurs doivent pouvoir :
 
 ### Liens
 
-- URL de la solution : [Ajoutez l'URL de votre solution ici](https://your-solution-url.com)
-- URL du site en ligne : [Ajoutez l'URL de votre site en ligne ici](https://your-live-site-url.com)
+- URL de la solution : [URL solution](https://github.com/doriannegelly/pricing-component-with-toggle-master.git)
+- URL du site en ligne : [URL site en ligne](https://doriannegelly.github.io/pricing-component-with-toggle-master/)
 
 ## Mon processus
 
@@ -44,19 +44,66 @@ Les utilisateurs doivent pouvoir :
 - Balises HTML5 sémantiques
 - Propriétés personnalisées CSS
 - Flexbox
-- Grille CSS
 - Flux de travail mobile-first
-- [React](https://reactjs.org/) - Bibliothèque JS
-- [Next.js](https://nextjs.org/) - Framework React
-- [Styled Components](https://styled-components.com/) - Pour les styles
-
-**Note : Ce sont juste des exemples. Supprimez cette note et remplacez la liste ci-dessus par vos propres choix.**
+- Javascript
 
 ### Ce que j'ai appris
 
-Utilisez cette section pour récapituler certaines de vos principales leçons apprises en travaillant sur ce projet. Les écrire et fournir des exemples de code des zones que vous souhaitez mettre en avant est un excellent moyen de renforcer vos connaissances.
-
-Pour voir comment ajouter des extraits de code, voir ci-dessous :
-
+- J'ai appris comment modifier l'apparence d'un checkbox complètement et j'en suis très fière.  Pour ce faire, j'ai utilisé ce html:
 ```html
-<h1>Un code HTML dont je suis fier</h1>
+<label class="pricing" for="pricing">
+  <span class="label">Annually</span>
+
+  <span class="switch">
+    <input type="checkbox" id="pricing" checked>
+    <span class="slider"></span>
+  </span>
+
+  <span class="label">Monthly</span>
+</label>
+```
+Et ce CSS:
+```css
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 32px;
+    margin: 0 1.5rem;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom right, var(--violet), var(--blue));
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 5px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+```
+
+- Je suis aussi très fière des multiples dégradés que j'ai mis, comme celui-ci:
+```css
+background: linear-gradient(to right, var(--violet), var(--blue));
+```
