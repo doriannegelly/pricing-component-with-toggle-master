@@ -11,7 +11,6 @@ Ceci est une solution au [défi Pricing component with toggle](https://www.front
 - [Mon processus](#mon-processus)
   - [Construit avec](#construit-avec)
   - [Ce que j'ai appris](#ce-que-jai-appris)
-  - [Développement continu](#développement-continu)
   - [Ressources utiles](#ressources-utiles)
 - [Auteur](#auteur)
 - [Remerciements](#remerciements)
@@ -107,3 +106,12 @@ Et ce CSS:
 ```css
 background: linear-gradient(to right, var(--violet), var(--blue));
 ```
+
+### Ressources utiles
+
+- [W3C](https://validator.w3.org/#validate_by_upload+with_options) - Cela m'a aidé pour améliorer mon code.
+
+## Auteur
+
+- Site Web - [Dorianne Gelly](https://doriannegelly.github.io/pricing-component-with-toggle-master/)
+- Frontend Mentor - [@doriannegelly](https://www.frontendmentor.io/profile/doriannegelly) 
